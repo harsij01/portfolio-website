@@ -7,9 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
   <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
     <span></span><span></span><span></span>
   </button>
@@ -49,7 +47,6 @@
   </aside>
  
   <main>
- 
     <!-- HOME -->
     <div class="panel active" id="panel-home">
       <div class="panel-header">
@@ -236,41 +233,7 @@
         </a>
       </div>
     </div>
- 
   </main>
- 
-  <script>
-    function showPanel(id, btn) {
-      document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-      document.querySelectorAll('.nav-link').forEach(b => b.classList.remove('active'));
-      document.getElementById('panel-' + id).classList.add('active');
-      btn.classList.add('active');
-      // Close sidebar on mobile after selecting
-      closeSidebar();
-    }
-
-    const toggle = document.getElementById('menuToggle');
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('sidebarOverlay');
-
-    function openSidebar() {
-      sidebar.classList.add('open');
-      overlay.classList.add('visible');
-      toggle.classList.add('open');
-    }
-
-    function closeSidebar() {
-      sidebar.classList.remove('open');
-      overlay.classList.remove('visible');
-      toggle.classList.remove('open');
-    }
-
-    toggle.addEventListener('click', () => {
-      sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
-    });
-
-    overlay.addEventListener('click', closeSidebar);
-  </script>
- 
+  <script src="script.js"></script>
 </body>
 </html>
