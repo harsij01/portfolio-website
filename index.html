@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — AI/ML Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <aside id="sidebar">
+    <div class="sidebar-top">
+      <div class="avatar">HJ</div>
+      <div class="sidebar-name">Harsini Jegatheesan</div>
+      <div class="sidebar-role">Aspiring AI / ML Engineer</div>
+    </div>
+ 
+    <nav>
+      <div class="nav-section-label">Menu</div>
+      <button class="nav-link active" onclick="showPanel('home', this)">
+         Home
+      </button>
+      <button class="nav-link" onclick="showPanel('projects', this)">
+         Projects
+      </button>
+      <button class="nav-link" onclick="showPanel('about', this)">
+         About
+      </button>
+      <button class="nav-link" onclick="showPanel('contact', this)">
+         Contact
+      </button>
+    </nav>
+ 
+    <div class="sidebar-footer">
+      <div class="nav-section-label" style="margin: 0 0 0.4rem 0;">Courses</div>
+      <div class="cert-chip in-progress"><span class="chip-dot"></span> CS50AI — In Progress</div>
+      <div class="cert-chip"><span class="chip-dot"></span> CS50SQL — Completed</div>
+      <div class="cert-chip"><span class="chip-dot"></span> CS50P — Completed</div>
+      <div class="cert-chip"><span class="chip-dot"></span> CS50X — Completed</div>
+      <div class="cert-chip"><span class="chip-dot"></span> CS50T — Completed</div>
+    </div>
+  </aside>
+ 
+  <main>
+ 
+    <!-- HOME -->
+    <div class="panel active" id="panel-home">
+      <div class="panel-header">
+        <div class="panel-eyebrow">// Welcome</div>
+        <h1 class="panel-title">Driven By <br><span class="outline">Curiosity</span></h1>
+        <p class="panel-subtitle">
+          A self-driven developer with a passion for AI, currently building my foundation one project at a time.
+        </p>
+      </div>
+      <div class="hero-grid">
+        <div class="hero-stat">
+          <div class="stat-big">3</div>
+          <div class="stat-desc">
+            A growing collection of projects spanning web apps, databases, and algorithms, with more on the way.
+          </div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-label">Currently</div>
+          <div class="stat-value">Applying</div>
+          <div class="stat-sub">Computer Engineering Program</div>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-label">Goal</div>
+          <div class="stat-value">AI/ML Engineer</div>
+          <div class="stat-sub">Starting with the fundamentals</div>
+        </div>
+        <div class="hero-stat full-width working-on">
+          <div class="stat-label">Currently Working On</div>
+          <div class="working-on-grid">
+            <div class="working-on-item">
+              <div class="stat-label">Course</div>
+              <div class="stat-value small">CS50 AI</div>
+              <div class="stat-sub">Working through search, knowledge and neural networks</div>
+            </div>
+            <div class="working-on-item">
+              <div class="stat-label">Project</div>
+              <div class="stat-value small">Image Classifier</div>
+              <div class="stat-sub">Training a model to classify images using Python</div>
+            </div>
+            <div class="working-on-item">
+              <div class="stat-label">Project</div>
+              <div class="stat-value small">Sentiment Analyser</div>
+              <div class="stat-sub">Building an NLP model to detect sentiment in text</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- PROJECTS -->
+    <div class="panel" id="panel-projects">
+      <div class="panel-header">
+        <div class="panel-eyebrow">// Selected Work</div>
+        <h1 class="panel-title">Projects<br><span class="outline">I've Built.</span></h1>
+        <p class="panel-subtitle">A collection of projects built to solve real problems, from database systems to web applications and beyond.</p>
+      </div>
+      <div class="projects-list">
+        <div class="project-card">
+          <div>
+            <div class="project-source">CS50SQL — Final Project</div>
+            <div class="project-name">Criminal Case Tracker</div>
+            <p class="project-desc">A relational database system for tracking criminal cases, suspects, victims, investigators and evidence. Designed with normalized schemas, foreign key constraints, and complex multi-table queries for analysis.</p>
+            <div class="project-tags">
+              <span class="tag">SQL</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Schema Design</span>
+              <span class="tag">Query Optimization</span>
+              <span class="tag">Normalization</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-icon">🔍</span>
+            <a href="https://github.com/harsij01/criminal-case-tracker" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div>
+            <div class="project-source">CS50P — Final Project</div>
+            <div class="project-name">Project Manager</div>
+            <p class="project-desc">A full-stack web application for collaborative project and task management. Built with Flask, HTML, CSS and Bootstrap on the frontend, SQLAlchemy for database management, and Werkzeug for secure password encryption. Teams can create projects, assign tasks, and track progress together.</p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">Databases</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">SQLAlchemy</span>
+              <span class="tag">Werkzeug</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-icon">📋</span>
+            <a href="https://github.com/harsij01/project-manager" class="project-link">GitHub →</a>
+          </div>
+        </div>
+        <div class="project-card">
+          <div>
+            <div class="project-source">CS50X — Final Project</div>
+            <div class="project-name">Algorithm Visualizer</div>
+            <p class="project-desc">An interactive browser tool that animates sorting algorithms in real time, making abstract concepts visual and intuitive. Users can control the speed and swap between algorithms to see how each one behaves on the same data.</p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Algorithms</span>
+              <span class="tag">Data Structures</span>
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-icon">⚙️</span>
+            <a href="https://github.com/harsij01/algorithm_visualizer" class="project-link">GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- ABOUT -->
+    <div class="panel" id="panel-about">
+      <div class="panel-header">
+        <div class="panel-eyebrow">// About Me</div>
+        <h1 class="panel-title">Who<br><span class="outline">I Am.</span></h1>
+      </div>
+      <div class="about-body">
+        <div class="about-text">
+          <p>
+            My interest in programming started at 14, during the COVID pandemic. With school moved online,
+            I used my free time to teach myself Python through freely available resources, and never looked back.
+          </p>
+          <p>
+            I sat my O/Levels with a strong focus on coding alongside my studies, finishing with
+            <strong>8As and a B</strong>. For A/Levels, I chose <strong>Combined Mathematics, Physics,
+            and ICT</strong>, and recently received my results: <strong>2As and a B</strong> with a
+            <strong>Z-score of 2.4074</strong>.
+          </p>
+          <p>
+            I am currently applying for an undergraduate degree in <strong>Computer Engineering</strong>,
+            with a long-term goal of specialising in <strong>AI and Machine Learning</strong>.
+            Alongside my studies, I have been working through Harvard's CS50 series to build a
+            genuine foundation in computer science and ship real projects.
+          </p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-box"><div class="skill-box-label">Language</div><div class="skill-box-value">Python</div></div>
+          <div class="skill-box"><div class="skill-box-label">Language</div><div class="skill-box-value">JavaScript</div></div>
+          <div class="skill-box"><div class="skill-box-label">Language</div><div class="skill-box-value">C</div></div>
+          <div class="skill-box"><div class="skill-box-label">Language</div><div class="skill-box-value">Java</div></div>
+          <div class="skill-box"><div class="skill-box-label">Language</div><div class="skill-box-value">Scratch</div></div>
+          <div class="skill-box"><div class="skill-box-label">Web</div><div class="skill-box-value">HTML / CSS</div></div>
+          <div class="skill-box"><div class="skill-box-label">Web</div><div class="skill-box-value">Flask</div></div>
+          <div class="skill-box"><div class="skill-box-label">Database</div><div class="skill-box-value">SQLite</div></div>
+          <div class="skill-box"><div class="skill-box-label">Database</div><div class="skill-box-value">MySQL</div></div>
+          <div class="skill-box"><div class="skill-box-label">Database</div><div class="skill-box-value">PostgreSQL</div></div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- CONTACT -->
+    <div class="panel" id="panel-contact">
+      <div class="panel-header">
+        <div class="panel-eyebrow">// Get In Touch</div>
+        <h1 class="panel-title">Let's<br><span class="outline">Connect.</span></h1>
+        <p class="panel-subtitle">Open to collaborations and conversations about AI and Computer Engineering.</p>
+      </div>
+      <div class="contact-items">
+        <a href="https://mail.google.com/mail/?view=cm&to=harsinij6530@gmail.com" target="_blank" class="contact-row">
+          <span class="contact-icon">✉</span>
+          <div><div class="contact-label">Email</div><div class="contact-value">harsinij6530@gmail.com</div></div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://github.com/harsij01" target="_blank" class="contact-row">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+          </svg>
+          <div><div class="contact-label">GitHub</div><div class="contact-value">github.com/harsij01</div></div>
+          <span class="contact-arrow">→</span>
+        </a>
+        <a href="https://linkedin.com/in/harsini-jegatheesan" target="_blank" class="contact-row">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+          </svg>
+          <div><div class="contact-label">LinkedIn</div><div class="contact-value">linkedin.com/in/harsini-jegatheesan</div></div>
+          <span class="contact-arrow">→</span>
+        </a>
+      </div>
+    </div>
+ 
+  </main>
+ 
+  <script>
+    function showPanel(id, btn) {
+      document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav-link').forEach(b => b.classList.remove('active'));
+      document.getElementById('panel-' + id).classList.add('active');
+      btn.classList.add('active');
+      // Close sidebar on mobile after selecting
+      closeSidebar();
+    }
+
+    const toggle = document.getElementById('menuToggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('sidebarOverlay');
+
+    function openSidebar() {
+      sidebar.classList.add('open');
+      overlay.classList.add('visible');
+      toggle.classList.add('open');
+    }
+
+    function closeSidebar() {
+      sidebar.classList.remove('open');
+      overlay.classList.remove('visible');
+      toggle.classList.remove('open');
+    }
+
+    toggle.addEventListener('click', () => {
+      sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+    });
+
+    overlay.addEventListener('click', closeSidebar);
+  </script>
+ 
+</body>
+</html>
