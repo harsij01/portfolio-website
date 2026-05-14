@@ -473,6 +473,15 @@ main {
     border-color: var(--accent); 
 }
 
+.project-meta {
+    text-align: right;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
 /* ABOUT */
 .about-body { 
     display: grid; 
