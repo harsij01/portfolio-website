@@ -3,7 +3,7 @@
 My personal portfolio website, built from scratch using HTML, CSS and JavaScript.
 
 ## Live Site
-[harsij01.github.io](https://harsij01.github.io)
+[harsij01.github.io/portfolio-website](https://harsij01.github.io/portfolio-website)
 
 ## Built With
 - HTML
